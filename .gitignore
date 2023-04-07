@@ -24,7 +24,10 @@ wp-content/*
 # unless explicitly whitelisted at the end of this file
 wp-content/mu-plugins/*
 wp-content/plugins/*
-wp-content/themes/*
+wp-content/themes/twentytwentyone/*
+wp-content/themes/twentytwentythree/*
+wp-content/themes/twentytwentytwo/*
+wp-content/themes/index.php
 
 # ignore all files starting with . or ~
 .*
@@ -92,4 +95,3 @@ Thumbs.db
 # add your own entries here
 !wp-content/mu-plugins/example-mu-plugin/
 !wp-content/plugins/example-plugin/
-!wp-content/themes/blossom-spa/
