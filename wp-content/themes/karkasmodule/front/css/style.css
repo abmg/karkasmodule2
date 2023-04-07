@@ -71,7 +71,7 @@ input[type="submit"]:hover {
 
 #main-bg {
     /*min-height: 900px;*/
-    height: 100vh;
+    /*height: 100vh;*/
     background: url('../img/bgg.jpg');
     width: 100%;
     background-size: cover;
@@ -118,7 +118,7 @@ header h1 span {
 }
 
 #header-line {
-    padding-top: 80px;
+    padding-top: 10px;
 }
 
 /** END HEADER */
@@ -143,14 +143,65 @@ header h1 span {
     #anonce {
         margin-top: auto;
     }
-}
 
-@media (min-width: 992px) {
     #anonce {
         font-size: 2.9em;
     }
 
     #anonce {
         margin-top: -80px;
+    }
+}
+
+@media (min-width: 1400px) {
+    #header-line {
+        padding-top: 80px;
+    }
+}
+
+/** services-line */
+#services-line {
+    margin-top: 80px;
+    font-size: 17px;
+    padding-bottom: 50px;
+}
+
+#services-line .item {
+    width: 90px;
+    height: 90px;
+    margin: 15px auto;
+    border-radius: 100px;
+    border: 2px solid #fff;
+    background: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+
+#services-line .item img {
+    border-radius: 100px;
+    display: block;
+    width: 100%;
+    opacity: 0.2;
+}
+
+#services-line .item.confirm img {
+    opacity: 1;
+}
+#services-line .line {
+    width: 69%;
+    height: 4px;
+    background: #fff;
+    position: absolute;
+    margin: 0 auto;
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+@media (min-width: 1400px) {
+    #services-line {
+        font-size: 19px;
     }
 }

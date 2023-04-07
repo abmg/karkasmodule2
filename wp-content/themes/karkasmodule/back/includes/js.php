@@ -17,14 +17,14 @@ function km_add_js()
             'src' => $templateDirectory . '/front/lib/bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js',
             'deps' => [],
             'ver' => '',
-            'inFooter' => false
+            'inFooter' => true
         ],
         [
             'name' => 'fontawesome',
             'src' => $templateDirectory . '/front/js/common.js',
             'deps' => [],
             'ver' => '',
-            'inFooter' => false
+            'inFooter' => true
         ],
     ];
 

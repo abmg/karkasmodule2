@@ -22,6 +22,7 @@
 
 </head>
 <body>
+<?php $templateDirectory = get_template_directory_uri(); ?>
 <header>
     <div id="main-bg" class="container-fluid">
         <div id="header-line" class="d-flex container justify-content-center">
@@ -30,7 +31,8 @@
                     <h1 class="text-center">
                         <span>Фабрика</span><br/>каркасного строительства
                     </h1>
-                    <img class="logo" src="front/img/logo.png" alt="Логотип Каркас модуль"/>
+                    <img class="logo" src="<?php echo $templateDirectory; ?>/front/img/logo.png"
+                         alt="Логотип Каркас модуль"/>
                 </div>
             </div>
             <div class="d-flex flex-column flex-sm-row col-sm-8 align-items-sm-center justify-content-between  float-end">
@@ -81,14 +83,14 @@
                     <div class="menu-footer-menu-container">
                         <ul id="primary-menu" class="nav-menu">
                             <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-395"><a
-                                    href="/">Главная</a></li>
+                                        href="/">Главная</a></li>
                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-389"><a
-                                    href="https://xn----7sbar0abkgspn2a2j.xn--p1ai/%d0%ba%d0%b0%d1%82%d0%b0%d0%bb%d0%be%d0%b3/">Каталог</a>
+                                        href="https://xn----7sbar0abkgspn2a2j.xn--p1ai/%d0%ba%d0%b0%d1%82%d0%b0%d0%bb%d0%be%d0%b3/">Каталог</a>
                             </li>
                             <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-26 current_page_item menu-item-has-children menu-item-392">
                                 <a href="https://xn----7sbar0abkgspn2a2j.xn--p1ai/%d0%bd%d0%b0%d1%88%d0%b0-%d1%82%d0%b5%d1%85%d0%bd%d0%be%d0%bb%d0%be%d0%b3%d0%b8%d1%8f/"
                                    aria-current="page">Наша технология</a><span class="submenu-toggle"><i
-                                        class="fa-solid fa-chevron-down"></i>
+                                            class="fa-solid fa-chevron-down"></i>
                                     <!-- <i class="fas fa-chevron-down"></i> Font Awesome fontawesome.com --></span>
                                 <ul class="sub-menu">
                                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-398">
@@ -106,13 +108,13 @@
                                 </ul>
                             </li>
                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-391"><a
-                                    href="https://xn----7sbar0abkgspn2a2j.xn--p1ai/%d1%81%d0%be%d1%82%d1%80%d1%83%d0%b4%d0%bd%d0%b8%d1%87%d0%b5%d1%81%d1%82%d0%b2%d0%be/">Сотрудничество</a>
+                                        href="https://xn----7sbar0abkgspn2a2j.xn--p1ai/%d1%81%d0%be%d1%82%d1%80%d1%83%d0%b4%d0%bd%d0%b8%d1%87%d0%b5%d1%81%d1%82%d0%b2%d0%be/">Сотрудничество</a>
                             </li>
                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-446"><a
-                                    href="https://xn----7sbar0abkgspn2a2j.xn--p1ai/%d0%bd%d0%b0%d1%88%d0%b8-%d0%bf%d0%b0%d1%80%d1%82%d0%bd%d0%b5%d1%80%d1%8b/">Наши
+                                        href="https://xn----7sbar0abkgspn2a2j.xn--p1ai/%d0%bd%d0%b0%d1%88%d0%b8-%d0%bf%d0%b0%d1%80%d1%82%d0%bd%d0%b5%d1%80%d1%8b/">Наши
                                     партнеры</a></li>
                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-390"><a
-                                    href="https://xn----7sbar0abkgspn2a2j.xn--p1ai/%d0%ba%d0%be%d0%bd%d1%82%d0%b0%d0%ba%d1%82%d1%8b/">Контакты</a>
+                                        href="https://xn----7sbar0abkgspn2a2j.xn--p1ai/%d0%ba%d0%be%d0%bd%d1%82%d0%b0%d0%ba%d1%82%d1%8b/">Контакты</a>
                             </li>
                         </ul>
                     </div>
@@ -140,11 +142,36 @@
         <!-- @todo Вынести из header -->
         <div id="anonce" class="d-flex container justify-content-center text-center
                                 justify-content-lg-end text-lg-end">
-            <div class="col-lg-10 col-xl-7">Проектирование и строительство
+            <div class="col-lg-10 col-xl-8">Проектирование и строительство
                 надежных зданий ЛСТК по всей России.<br/>
                 Строительство под ключ. С гарантией.<br/>
                 <button>Оставить заявку</button>
             </div>
+        </div>
+
+        <div id="services-line" class="container col-lg-11 d-none d-sm-flex position-relative">
+            <div class="text-center col-sm-4">
+                Согласование <br/>и проектирование сооружения<br/>
+                <div class="item confirm">
+                    <img src="<?php echo $templateDirectory; ?>/front/img/handshake.png"
+                         alt="Согласование и проектирование сооружения"/>
+                </div>
+            </div>
+            <div class="text-center col-sm-4 make">
+                Производство <br/>металлоконструкций<br/>
+                <div class="item">
+                    <img src="<?php echo $templateDirectory; ?>/front/img/production.png"
+                         alt="Согласование и проектирование сооружения"/>
+                </div>
+            </div>
+            <div class="text-center col-sm-4 build" >
+                Возведение <br/>сооружения<br/>
+                <div class="item">
+                    <img src="<?php echo $templateDirectory; ?>/front/img/house.png"
+                         alt="Согласование и проектирование сооружения"/>
+                </div>
+            </div>
+            <div class="line"></div>
         </div>
 
     </div>
